@@ -10,7 +10,7 @@ export const generateCSV = (candidate1, candidate2) => {
 	lula = lula.replace(',','.')
 	bolsonaro = bolsonaro.replace(',','.')
 
-	const result = `${bolsonaro},${lula},${hours}`
+	const result = `${bolsonaro},${lula},\"${hours}\"`
 
 	fs.writeFileSync(
 		'csv/eleicoes-2022-segundo-turno.csv', 
